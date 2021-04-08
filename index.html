@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="css/custom.css" />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <div class="child">
+      <img src="images/logo.png" />
+    </div>
+
+    <ul class="child" id="menu">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="child">
+      <img src="images/magnify-2.png" id="magnify" />
+      <input type="text" name="search" id="search">
+    </div>
+  </header>
+  <div id="container">
+    <h1>Flexawesome</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <ul id="flex-container">
+      <li>
+        <a href="#">
+          <div class="magnify">
+          </div>
+          <span>Cultura</span>
+          <img src="images/thumb-1.jpg" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="magnify">
+          </div>
+          <span>Cultura</span>
+          <img src="images/thumb-2.jpg" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="magnify">
+          </div>
+          <span>Cultura</span>
+          <img src="images/thumb-3.jpg" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="magnify">
+          </div>
+          <span>Cultura</span>
+          <img src="images/thumb-4.jpg" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="magnify">
+          </div>
+          <span>Cultura</span>
+          <img src="images/thumb-5.jpg" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="magnify">
+          </div>
+          <span>Cultura</span>
+          <img src="images/thumb-6.jpg" />
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script src="./js/jquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      console.log('sdfsd');
+      $("#magnify").on("click", function() {
+        console.log('sdfsd');
+        $(this).hide();
+        $("#search").toggle("scale");
+        $("#search").css("display", "block");
+      });
+
+    });
+  </script>
+</body>
+
+</html>
